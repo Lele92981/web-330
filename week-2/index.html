@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--
+    Pragmatic JavaScript
+    Chapter 1
+    Programming Assignment
+
+    Author: Leah Thames
+    Date: 3/26/25
+    Filename: index.html
+  -->
+    <title>Roleplay Character Generator</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="script.js"></script>
+
+
+  </head>
+  <body>
+    <div id="mainContainer">
+      <form id="characterForm">
+        <label for="heroName">Hero Name:</label><br />
+        <input type="text" id="heroName" name="heroName" required /><br />
+        <label for="heroGender">Hero Gender:</label><br />
+        <select id="heroGender" name="heroGender" required>
+          <option value="">Select...</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option></select>
+          <br />
+        <label for="heroClass">Hero Class:</label><br />
+        <select id="heroClass" name="heroClass" required>
+          <option value="">Select...</option>
+          <option value="warrior">Warrior</option>
+          <option value="mage">Mage</option>
+          <option value="rogue">Rogue</option></select>
+          <br />
+
+          <div class="form-group">
+            <label for="characterGender">Character Gender:</label>
+            <select id="characterGender">
+                <option value="">Select Gender</option>
+                <option value="Male">Male</option>
+          <option value = "female">Female</option>
+          <option value = "other">Other</option>
+            </select>
+        </div
+        <button id="generateHero">Generate Hero</button>
+<div id="result">
+</div>
+
+<script>
+  function createCharacter(characterGender) {
+      // If no parameters are passed, get values from input fields
+
+      if (!characterGender) characterGender = document.getElementById('characterClass').value;
+
+      // Create character object
+      const character = {
+
+          class: characterGender,
+
+
+
+          toString: function() {
+              return `${this.class}`;
+          }
+      };
+      // Display result
+      const resultDiv = document.getElementById('result');
+      resultDiv.innerHTML = `
+          <h3>Character Created!</h3>
+
+          <p><strong>Class:</strong> ${character.gender}</p>
+      `;
+      return character;
+  }
+</script>
+
+
+
+        <button onclick="createCharacter()">Create Character</button>
+      </form>
+
+      <div id="characterOutput"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
