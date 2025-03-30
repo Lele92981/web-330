@@ -1,0 +1,51 @@
+/*
+  Pragmatic JavaScript
+  Chapter 1
+  Programming Assignment
+
+  Author: Leah Thames
+  Date: 3/30/2021
+  Filename:
+*/
+
+/* Your CSS goes here */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #9011c3;
+  margin: 0;
+  padding: 0;
+}
+
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+
+/* Form Styles */
+form {
+  background-color: #901057;
+  padding: 1em;
+  margin: 1em 0;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
