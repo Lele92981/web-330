@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--
+      Pragmatic JavaScript
+      Chapter 2
+      Programming Assignment
+
+      Author: Leah Thames
+      Date: 4/16/25
+      Filename: index.html
+    -->`
+    <title>Table Reservation</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+
+</head>
+<body>
+    <div class="container">
+        <h2>Table Reservation</h2>
+        <form id="reservationForm">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="tableNumber">Table Number:</label>
+                <input type="number" id="tableNumber" name="tableNumber" min="1" required>
+            </div>
+            <button type="submit">Reserve Table</button>
+        </form>
+        <div id="message"></div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
