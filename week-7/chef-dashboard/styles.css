@@ -1,0 +1,33 @@
+/*
+  Pragmatic JavaScript
+  Chapter 2
+  Programming Assignment
+
+  Author: Leah Thames
+  Date: 4/16/25
+  Filename: styles.css
+*/
+
+/* Add your CSS styles here */
+body {
+  font-family: sans-serif;
+  background-color: #51bdf3;
+}
+
+div {
+  background-color: #eaf0f3;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
